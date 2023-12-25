@@ -2,23 +2,22 @@ package com.epam.mjc.stage0;
 
 public class Animal {
     private String color;
-    private int numberOfRaws;
+    private int numberOfPaws;  // Update field name to numberOfPaws
     private boolean hasFur;
-    public Animal()
-    {
+
+    public Animal() {
         color = "red";
-        numberOfRaws = 1;
+        numberOfPaws = 1;  // Update field initialization
         hasFur = true;
     }
-    public Animal(String color,int numberOfRaws,boolean hasFur){
+
+    public Animal(String color, int numberOfPaws, boolean hasFur) {
         this.color = color;
-        this.numberOfRaws = numberOfRaws;
+        this.numberOfPaws = numberOfPaws;  // Update parameter assignment
         this.hasFur = hasFur;
     }
-    public String getDescription(){
-        return "This animal is mostly " + color + ". It has " +  numberOfRaws + (numberOfRaws>1?" paws":" paw")+ " and " + (hasFur?'a':"no") +" fur.";
+
+    public String getDescription() {
+        return "This animal is mostly " + color + ". It has " +  numberOfPaws + (numberOfPaws > 1 ? " paws" : " paw") + " and " + (hasFur ? 'a' : "no") + " fur.";
     }
-
-
-
 }
